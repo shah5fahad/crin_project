@@ -297,8 +297,9 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 50px;
   margin-right: 8px;
+  border-radius: 8px;
 }
 
 .header .logo h1 {
@@ -584,7 +585,7 @@ h6 {
 --------------------------------------------------------------*/
 .footer {
   color: var(--default-color);
-  background-color: #709db6;
+  background-color: #232d2c;
   font-size: 14px;
   position: relative;
 }
@@ -2840,4 +2841,31 @@ section,
   padding-left: 5px;
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
+}
+
+.scrolling-heading-wrapper {
+  width: 100%;
+  overflow: hidden;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.scrolling-heading-text {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: scroll-left 15s linear infinite;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #356ddc;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }

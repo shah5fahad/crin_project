@@ -22,6 +22,12 @@
   document.addEventListener('scroll', toggleScrolled);
   window.addEventListener('load', toggleScrolled);
 
+  // Show/hide dropdown on hover
+  const dropdown = document.querySelector('.dropdown');
+  const menu = dropdown.querySelector('.dropdown-menu');
+  dropdown.addEventListener('mouseover', () => menu.style.display = 'block');
+  dropdown.addEventListener('mouseout', () => menu.style.display = 'none');
+
   /**
    * Mobile nav toggle
    */
