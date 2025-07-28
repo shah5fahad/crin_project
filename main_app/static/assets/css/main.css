@@ -54,11 +54,18 @@
 
 .accent-background {
   --background-color: #7c737c;
+  --background-image: url('/static/assets/img/top_bg_img.jpg');
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --accent-color: #ffffff;
   --surface-color: #00b6a1;
   --contrast-color: #ffffff;
+}
+
+.top_background_img {
+  background-image: url('/static/assets/img/top_bg_img.jpg') !important;
+  background-size: cover;
+  background-position: center;
 }
 
 /* Smooth scroll */
@@ -350,7 +357,9 @@ h6 {
   }
 
   .navmenu a,
-  .navmenu a:focus {
+  .navmenu a:focus,
+  .navmenu .dropdown-content,
+  .navmenu .dropdown-content:focus {
     color: var(--nav-color);
     font-size: 15px;
     padding: 0 2px;
@@ -385,6 +394,7 @@ h6 {
   }
 
   .navmenu a:hover:before,
+  .navmenu .dropdown-content:hover:before
   .navmenu li:hover>a:before,
   .navmenu .active:before {
     visibility: visible;
@@ -487,7 +497,9 @@ h6 {
   }
 
   .navmenu a,
-  .navmenu a:focus {
+  .navmenu a:focus,
+  .navmenu .dropdown-content,
+  .navmenu .dropdown-content:focus {
     color: var(--nav-dropdown-color);
     padding: 10px 20px;
     font-family: var(--nav-font);
@@ -522,6 +534,7 @@ h6 {
   }
 
   .navmenu a:hover,
+  .navmenu .dropdown-content:hover,
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-dropdown-hover-color);
