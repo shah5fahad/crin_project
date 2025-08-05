@@ -54,7 +54,7 @@
 
 .accent-background {
   --background-color: #7c737c;
-  --background-image: url('/static/assets/img/top_bg_img.jpg');
+  --background-image: url('/static/assets/img/top_bg_img.jpeg');
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --accent-color: #ffffff;
@@ -63,7 +63,7 @@
 }
 
 .top_background_img {
-  background-image: url('/static/assets/img/top_bg_img.jpg') !important;
+  background-image: url('/static/assets/img/top_bg_img.jpeg') !important;
   background-size: cover;
   background-position: center;
 }
@@ -1079,21 +1079,21 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Clients Section
+# global_index Section
 --------------------------------------------------------------*/
-.clients .swiper {
+.global_index .swiper {
   padding: 10px 0;
 }
 
-.clients .swiper-wrapper {
+.global_index .swiper-wrapper {
   height: auto;
 }
 
-.clients .swiper-slide img {
+.global_index .swiper-slide img {
   transition: 0.3s;
 }
 
-.clients .swiper-slide img:hover {
+.global_index .swiper-slide img:hover {
   transform: scale(1.1);
 }
 

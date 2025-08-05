@@ -1,0 +1,1547 @@
+{% extends 'base.html' %}
+
+{% block title %}Homepage - Curevita Research International Nexus{% endblock %}
+
+{% block content %}
+<main class="main">
+    <!-- Hero Section -->
+    <section id="hero" class="hero section accent-background top_background_img">
+    <div
+        class="container position-relative"
+        data-aos="fade-up"
+        data-aos-delay="100"
+    >
+        <div class="row gy-5 justify-content-between">
+            <div
+                class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center"
+            >
+                <div style="text-align: center; color: white; font-size: 28px; line-height: 1.2; font-family: monospace; font-weight: bold;">
+                International Multi-Disciplinary Journal
+                </div>
+
+                <div style="text-align: center; color: white; font-size: 19px; margin-top: 8px; font-family: cursive;">
+                A peer-reviewed and refereed online journal — openly
+                accessible, widely indexed, multidisciplinary, and
+                globally recognized for academic and scholarly
+                excellence.
+                </div>
+            </div>
+            <div class="col-lg-5 order-1 order-lg-2">
+                <img
+                src="{{ url_for('static', filename='assets/img/image-3.png') }}"
+                class="img-fluid"
+                alt=""
+                />
+            </div>
+        </div>
+    </div>
+
+    <div
+        class="icon-boxes position-relative"
+        data-aos="fade-up"
+        data-aos-delay="200"
+    >
+        <div class="container position-relative">
+            <div class="row gy-4 mt-5">
+                <div class="col-xl-3 col-md-6">
+                <div class="icon-box">
+                    <div class="icon">
+                        <i class="bi bi-journal-text"></i>
+                    </div>
+                    <h4 class="title">
+                        <a href="/peer_reviewed" class="stretched-link"
+                            >Peer-Reviewed Papers</a
+                        >
+                    </h4>
+                </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+                <div class="icon-box">
+                    <div class="icon"><i class="bi bi-globe"></i></div>
+                    <h4 class="title">
+                        <a href="#global_index" class="stretched-link"
+                            >Global Indexing</a
+                        >
+                    </h4>
+                </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+                <div class="icon-box">
+                    <div class="icon">
+                        <i class="bi bi-cloud-upload"></i>
+                    </div>
+                    <h4 class="title">
+                        <a href="#" class="stretched-link"
+                            >Easy Online Submission</a
+                        >
+                    </h4>
+                </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+                <div class="icon-box">
+                    <div class="icon">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+                    <h4 class="title">
+                        <a href="/ugc_care" class="stretched-link"
+                            >UGC-CARE Guidelines</a
+                        >
+                    </h4>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- /Hero Section -->
+
+
+    
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Our Services</h2>
+        <p>
+            Explore our key offerings that support authors, researchers,
+            and the academic community globally.
+        </p>
+    </div>
+    <!-- End Section Title -->
+
+    <div class="container">
+        <div class="row gy-4">
+            <div
+                class="col-lg-4 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="100"
+            >
+                <div class="service-item position-relative">
+                <div class="icon">
+                    <i class="bi bi-journal-check"></i>
+                </div>
+                <h3>Peer-Reviewed Publication</h3>
+                <p>
+                    All submitted papers undergo rigorous peer review
+                    ensuring high academic quality and research
+                    standards.
+                </p>
+                <a href="/peer_reviewed" class="readmore stretched-link">
+                    Read more <i class="bi bi-arrow-right"></i>
+                </a>
+                </div>
+            </div>
+
+            <div
+                class="col-lg-4 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="200"
+            >
+                <div class="service-item position-relative">
+                <div class="icon">
+                    <i class="bi bi-cloud-upload"></i>
+                </div>
+                <h3>Easy Online Submission</h3>
+                <p>
+                    Submit your research online using our simple and
+                    intuitive paper submission platform.
+                </p>
+                <a href="#" class="readmore stretched-link"
+                    >Read more <i class="bi bi-arrow-right"></i
+                ></a>
+                </div>
+            </div>
+
+            <div
+                class="col-lg-4 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="300"
+            >
+                <div class="service-item position-relative">
+                <div class="icon">
+                    <i class="bi bi-globe"></i>
+                </div>
+                <h3>Global Indexing</h3>
+                <p>
+                    Our journal is indexed by major research databases
+                    including Google Scholar, Academia, and more.
+                </p>
+                <a href="#global_index" class="readmore stretched-link"
+                    >Read more <i class="bi bi-arrow-right"></i
+                ></a>
+                </div>
+            </div>
+
+            <div
+                class="col-lg-4 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="400"
+            >
+                <div class="service-item position-relative">
+                <div class="icon">
+                    <i class="bi bi-badge-ad"></i>
+                </div>
+                <h3>DOI Allocation</h3>
+                <p>
+                    Each published paper receives a unique CrossRef DOI
+                    for better visibility and citation tracking.
+                </p>
+                <a href="/DOI_Allocation" class="readmore stretched-link"
+                    >Read more <i class="bi bi-arrow-right"></i
+                ></a>
+                </div>
+            </div>
+
+            <div
+                class="col-lg-4 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="500"
+            >
+                <div class="service-item position-relative">
+                <div class="icon">
+                    <i class="bi bi-shield-check"></i>
+                </div>
+                <h3>UGC-CARE Guidelines</h3>
+                <p>
+                    Our publication follows UGC-CARE recommendations and
+                    maintains compliance with ethical research practices.
+                </p>
+                <a href="/ugc_care" class="readmore stretched-link"
+                    >Read more <i class="bi bi-arrow-right"></i
+                ></a>
+                </div>
+            </div>
+
+            <div
+                class="col-lg-4 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="600"
+            >
+                <div class="service-item position-relative">
+                <div class="icon">
+                    <i class="bi bi-chat-square-text"></i>
+                </div>
+                <h3>24x7 Support</h3>
+                <p>
+                    Dedicated support through email, phone, and WhatsApp
+                    to assist authors at every stage of publication.
+                </p>
+                <a href="#contact" class="readmore stretched-link"
+                    >Read more <i class="bi bi-arrow-right"></i
+                ></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- global_index Section -->
+    <section id="global_index" class="global_index section">  
+    <div  class="container section-title" data-aos="fade-up">
+        <!-- Centered Heading -->
+        <h2 class="text-center fw-bold mb-3">Global Indexing</h2>  
+        <!-- First Row -->
+        <div class="row justify-content-center mb-2">  
+                <div class="col-6 col-md-3 text-center p-2">  
+                <img src="{{ url_for('static', filename='assets/img/google-scholar.png') }}" class="img-fluid" style="max-height: 80px;" alt="Google Scholar">  <!-- max-height से image की ऊंचाई कम की -->
+                </div>
+                <div class="col-6 col-md-3 text-center p-2">
+                <img src="{{ url_for('static', filename='assets/img/research-gate.png') }}" class="img-fluid" style="max-height: 80px;" alt="Research Gate">
+                </div>
+                <div class="col-6 col-md-3 text-center p-2">
+                <img src="{{ url_for('static', filename='assets/img/arxiv01.jpg') }}" class="img-fluid" style="max-height: 80px;" alt="ArXiv">
+                </div>
+                <div class="col-6 col-md-3 text-center p-2">
+                <img src="{{ url_for('static', filename='assets/img/openAire.jpg') }}" class="img-fluid" style="max-height: 80px;" alt="OpenAIRE">
+                </div>
+        </div>
+
+        <!-- Second Row -->
+        <div class="row justify-content-center">
+                <div class="col-6 col-md-3 text-center p-2">
+                <img src="{{ url_for('static', filename='assets/img/DOI_logo.png') }}" class="img-fluid" style="max-height: 80px;" alt="DOI">
+                </div>
+                <div class="col-6 col-md-3 text-center p-2">
+                <img src="{{ url_for('static', filename='assets/img/logo-crossref.png') }}" class="img-fluid" style="max-height: 80px;" alt="Crossref">
+                </div>
+                <div class="col-6 col-md-3 text-center p-2">
+                <img src="{{ url_for('static', filename='assets/img/zonodo1.jpg') }}" class="img-fluid" style="max-height: 80px;" alt="Zenodo">
+                </div>
+                <div class="col-6 col-md-3 text-center p-2">
+                <img src="{{ url_for('static', filename='assets/img/doaj.png') }}" class="img-fluid" style="max-height: 80px;" alt="DOAJ">
+                </div>
+        </div>
+    </div>
+    </section>
+    <!-- /Services Section -->
+    <section
+    id="call-to-action"
+    class="call-to-action section dark-background"
+    >
+    <div class="container">
+        <img
+            src="{{ url_for('static', filename='assets/img/science.webp') }}"
+            alt=""
+        />
+        <div
+            class="content row justify-content-center"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+        >
+            <div class="col-xl-10">
+                <div class="text-center">
+                <h3>Current Issue</h3>
+                <h3>Volume 3, Issue 5</h3>
+                <hr />
+                <h4>
+                    Submit Research Work for Consideration of Publication
+                </h4>
+                <a class="cta-btn" href="#">Submit Papers</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- /Call To Action Section -->
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Editorial Board</h2>
+        <p>
+            Meet our esteemed editors who uphold our
+            commitment to academic excellence.
+        </p>
+    </div>
+    <!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+                {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                    "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                },
+                "breakpoints": {
+                    "320": {
+                        "slidesPerView": 1,
+                        "spaceBetween": 40
+                    },
+                    "1200": {
+                        "slidesPerView": 3,
+                        "spaceBetween": 10
+                    }
+                }
+                }
+            </script>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                <div class="testimonial-item">
+                    <h3>
+                        Dr. Manoj Kumar Tembhare
+                        <a
+                            href="https://www.aiims.edu/index.php/en/2014-12-17-09-43-36/2014-12-17-09-48-16"
+                            target="_blank"
+                        >
+                            <i class="bi bi-link-45deg"></i>
+                        </a>
+                    </h3>
+                    <h4>
+                        Editor-in-Chief (EIC), Senior Scientist, Cardiac
+                        Biochemistry, AIIMS New Delhi, India
+                    </h4>
+                    <div class="stars">
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i>
+                    </div>
+                    <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <span
+                            >"Leading with vision and expertise at the All
+                            India Institute of Medical Sciences, Dr.
+                            Tembhare brings excellence to CRIN's editorial
+                            leadership."</span
+                        >
+                        <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                </div>
+                </div>
+
+                <div class="swiper-slide">
+                <div class="testimonial-item">
+                    <h3>Dr. Shweta Katiyar</h3>
+                    <h4>
+                        Assistant Professor, Sarojini Naidu Govt Girls PG
+                        College, Bhopal (MP), India
+                    </h4>
+                    <div class="stars">
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i>
+                    </div>
+                    <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <span
+                            >"Proud to support CRIN's mission of fostering
+                            academic growth across multidisciplinary
+                            domains."</span
+                        >
+                        <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                </div>
+                </div>
+
+                <div class="swiper-slide">
+                <div class="testimonial-item">
+                    <h3>
+                        Dr. Rahul Verma
+                        <a
+                            href="https://www.linkedin.com/in/rahul-verma-71013b233"
+                            target="_blank"
+                        >
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </h3>
+                    <h4>
+                        Research Scientist, Florida International
+                        University, Florida, USA
+                    </h4>
+                    <div class="stars">
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i>
+                    </div>
+                    <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <span
+                            >"CRIN offers a credible platform for impactful
+                            international research dissemination."</span
+                        >
+                        <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                </div>
+                </div>
+
+                <div class="swiper-slide">
+                <div class="testimonial-item">
+                    <h3>
+                        Dr. Anil Sarsawan
+                        <a
+                            href="https://in.linkedin.com/in/anil-sarsavan-41742765"
+                            target="_blank"
+                        >
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </h3>
+                    <h4>
+                        Senior Program Manager, Foundation For Ecological
+                        Security (FES), India
+                    </h4>
+                    <div class="stars">
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i>
+                    </div>
+                    <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <span
+                            >"CRIN’s focus on sustainability and ecological
+                            relevance makes it a unique and much-needed
+                            platform for modern research."</span
+                        >
+                        <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                </div>
+                </div>
+
+                <div class="swiper-slide">
+                <div class="testimonial-item">
+                    <h3>
+                        Dr. Rajdeep Jaswal
+                        <a
+                            href="https://www.linkedin.com/in/rajdeep-jaswal-32166210a/?originalSubdomain=in"
+                            target="_blank"
+                        >
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </h3>
+                    <h4>
+                        Research Scientist, USDA-ARS, North Dakota State
+                        University, USA
+                    </h4>
+                    <div class="stars">
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i>
+                    </div>
+                    <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <span
+                            >"It’s a great honor to be associated with a
+                            journal that values translational science and
+                            interdisciplinary advancement."</span
+                        >
+                        <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                </div>
+                </div>
+
+                <div class="swiper-slide">
+                <div class="testimonial-item">
+                    <h3>
+                        Dr Ravi Prasad Mukku
+                        <a
+                            href="https://www.linkedin.com/in/ravi-prasad-68092b91/?originalSubdomain=in"
+                            target="_blank"
+                        >
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </h3>
+                    <h4>
+                        Research Scientist, Department of Biomedical and Clinical Sciences (BKV), 
+                        Division of Molecular Medicine and Virology (MMV), 
+                        Linköping University (LIU), USA
+                    </h4>
+                    <div class="stars">
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i>
+                    </div>
+                    <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <span
+                            >"CRIN encourages young researchers to showcase
+                            their work and fosters interdisciplinary
+                            collaboration at the global level."</span
+                        >
+                        <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                </div>
+                </div>
+            </div>
+            <!-- End testimonial item -->
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    </section>
+    <!-- /Testimonials Section -->
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Reviewer Team</h2>
+        <p>
+            Meet our dedicated reviewers who ensure the quality and
+            integrity of our journal publications.
+        </p>
+    </div>
+    <!-- End Section Title -->
+
+    <div class="container">
+        <div class="row gy-4">
+            <!-- Dr. Niharika Bhawsar -->
+            <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+                <h4>Dr. Niharika Bhawsar</h4>
+                <span>Assistant Professor, Department of Biotechnology, PM College of Excellence, Govt. Narmada College, Narmadapuram, MP, India</span>
+                <div class="social">
+                <a href="https://www.linkedin.com/in/dr-niharika-bhawsar-a51269a9/?originalSubdomain=in" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+            </div>
+
+            <!-- Dr Jitendra Malviya -->
+            <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+                <h4>Dr Jitendra Malviya</h4>
+                <span>Assistant Professor, Department of Microbiology, Barkatullah University, Bhopal, MP, India</span>
+                <div class="social">
+                <a href="https://orcid.org/0000-0001-7501-0121" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+            </div>
+
+            <!-- Dr Aswani Mishra -->
+            <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+                <h4>Dr Aswani Mishra</h4>
+                <span>Prof. Department of Pharmaceutical Science, NINM, Indore, MP , India</span>
+                <div class="social">
+                <a href="https://in.linkedin.com/in/dr-ashwani-mishra-41042754" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+            </div>
+
+            <!-- Dr Naveen Vishwakarma -->
+            <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+                <h4>Dr Naveen Vishwakarma</h4>
+                <span>Assistant Professor, HOD, Department of Botany, PMCOP, Govt Auto. PG College, Chhindwara, MP, India</span>
+                <div class="social">
+                <a href="https://in.linkedin.com/in/naveen-vishwakarma-bb59b7211" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+            </div>
+
+            <!-- Dr. Sivaiah Budala -->
+            <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+                <h4>Dr. Sivaiah Budala</h4>
+                <span>Animal Biochemistry, ICAR-NDRI, Bengaluru, Karnataka, INDIA</span>
+            </div>
+            </div>
+
+            <!-- Dr Kuldeep Lakhera -->
+            <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+                <h4>Dr Kuldeep Lakhera</h4>
+                <span>Faculty of Botany, Veerangana Rani Durgava Govt. College, Tirodi, Balaghat, MP, India</span>
+            </div>
+            </div>
+
+            <!-- Dr RK Choudhary -->
+            <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+                <h4>Dr RK Choudhary</h4>
+                <span>Assistant Professor, Sha-Shib Science & Management College, Sha-Shib Group of Institutions, Bhopal, MP, India</span>
+            </div>
+            </div>
+
+            <!-- Dr Yogesh Badkhene -->
+            <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+                <h4>Dr Yogesh Badkhene</h4>
+                <span>Publication Head, Department of Training and Skills Development, Curevita Research Pvt Ltd, Bhopal, MP, India</span>
+            </div>
+            </div>
+
+            <!-- Dr Nisar Ahmad Ganie -->
+            <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+                <h4>Dr Nisar Ahmad Ganie</h4>
+                <span>Faculty, Department of Zoology, Government College Raghogarh, Guna (MP), India</span>
+            </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- /Team Section -->
+
+    <!-- Pricing Section -->
+    <!-- /Pricing Section -->
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section">
+    <div class="container">
+        <div class="row gy-4">
+            <!-- Left Content -->
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="content px-xl-5">
+                <h3>
+                    <span>Why Publish </span><strong>With Us?</strong>
+                </h3>
+                <p>
+                    Publishing with our journal gives your research
+                    global visibility, credibility through peer review,
+                    and indexing in leading academic databases.
+                </p>
+                </div>
+            </div>
+
+            <!-- FAQ Right Side -->
+            <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+                <div class="faq-container">
+                <div class="faq-item faq-active">
+                    <h3>
+                        <span class="num">1.</span>
+                        <span>International Peer Review Panel</span>
+                    </h3>
+                    <div class="faq-content">
+                        <p>
+                            All submitted manuscripts undergo rigorous peer
+                            review by experts from our international
+                            editorial and reviewer panel.
+                        </p>
+                    </div>
+                    <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+                <!-- End Faq item-->
+
+                <div class="faq-item">
+                    <h3>
+                        <span class="num">2.</span>
+                        <span>Fast Turnaround Time</span>
+                    </h3>
+                    <div class="faq-content">
+                        <p>
+                            We aim to complete the review and publication
+                            process within a short span, ensuring timely
+                            dissemination of your research.
+                        </p>
+                    </div>
+                    <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+                <!-- End Faq item-->
+
+                <div class="faq-item">
+                    <h3>
+                        <span class="num">3.</span>
+                        <span>Open Access for Maximum Visibility</span>
+                    </h3>
+                    <div class="faq-content">
+                        <p>
+                            All articles are openly accessible to readers
+                            across the globe, ensuring high visibility and
+                            citation potential.
+                        </p>
+                    </div>
+                    <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+                <!-- End Faq item-->
+
+                <div class="faq-item">
+                    <h3>
+                        <span class="num">4.</span>
+                        <span>Indexed in Major Databases</span>
+                    </h3>
+                    <div class="faq-content">
+                        <p>
+                            Our journal is indexed in multiple research
+                            databases and directories, expanding the reach
+                            of your research work.
+                        </p>
+                    </div>
+                    <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+                <!-- End Faq item-->
+
+                <div class="faq-item">
+                    <h3>
+                        <span class="num">5.</span>
+                        <span>DOI for Each Published Article</span>
+                    </h3>
+                    <div class="faq-content">
+                        <p>
+                            Every published paper is assigned a unique
+                            Digital Object Identifier (DOI) for easy
+                            citation and traceability.
+                        </p>
+                    </div>
+                    <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+                <!-- End Faq item-->
+
+                <div class="faq-item">
+                    <h3>
+                        <span class="num">6.</span>
+                        <span>Certificate of Publication</span>
+                    </h3>
+                    <div class="faq-content">
+                        <p>
+                            We provide an official Certificate of
+                            Publication to the corresponding author for
+                            academic and professional use.
+                        </p>
+                    </div>
+                    <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+                <!-- End Faq item-->
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- /Faq Section -->
+
+    <!-- Recent Posts Section -->
+    <section id="publication-guidelines" class="recent-posts section">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Scope Of Journal</h2>
+        <p>
+            Curevita Research International Nexus (CRIN) - An
+            International Peer-Reviewed Multidisciplinary Journal
+        </p>
+    </div>
+
+    <div class="container">
+        <div class="row gy-4">
+            <!-- Box 1: Life Sciences -->
+            <div
+                class="col-xl-4 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="100"
+            >
+                <article>
+                <div class="post-img">
+                    <img
+                        src="assets/img/blog/life-science.jpg"
+                        alt=""
+                        class="img-fluid"
+                    />
+                </div>
+                <p class="post-category">
+                    Life Sciences & Biomedical Research
+                </p>
+                <h2 class="title">
+                    <a href="#">Health, Biology, and Medical Studies</a>
+                </h2>
+                <ul>
+                    <li>
+                        Molecular biology, genomics, and biotechnology
+                    </li>
+                    <li>
+                        Clinical trials, pharmacology, and drug
+                        development
+                    </li>
+                    <li>
+                        Public health, epidemiology, and health
+                        informatics
+                    </li>
+                    <li>
+                        Microbiology, immunology, and infectious diseases
+                    </li>
+                    <li>
+                        Human physiology, nutrition, and integrative
+                        healthcare
+                    </li>
+                </ul>
+                </article>
+            </div>
+
+            <!-- Box 2: Environmental Sciences -->
+            <div
+                class="col-xl-4 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="200"
+            >
+                <article>
+                <div class="post-img">
+                    <img
+                        src="assets/img/blog/environment.jpg"
+                        alt=""
+                        class="img-fluid"
+                    />
+                </div>
+                <p class="post-category">
+                    Environmental & Earth Sciences
+                </p>
+                <h2 class="title">
+                    <a href="#">Sustainability and Climate Research</a>
+                </h2>
+                <ul>
+                    <li>Climate change and sustainable development</li>
+                    <li>
+                        Environmental science, policy, and conservation
+                    </li>
+                    <li>Renewable energy and green technologies</li>
+                    <li>
+                        Geosciences, hydrology, and disaster management
+                    </li>
+                </ul>
+                </article>
+            </div>
+
+            <!-- Box 3: Engineering & AI -->
+            <div
+                class="col-xl-4 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="300"
+            >
+                <article>
+                <div class="post-img">
+                    <img
+                        src="assets/img/blog/engineering-ai.jpg"
+                        alt=""
+                        class="img-fluid"
+                    />
+                </div>
+                <p class="post-category">
+                    Engineering, Computer Science & AI
+                </p>
+                <h2 class="title">
+                    <a href="#">Technology and Smart Systems</a>
+                </h2>
+                <ul>
+                    <li>
+                        Artificial intelligence, machine learning, and
+                        deep learning
+                    </li>
+                    <li>
+                        Data science, big data analytics, and cloud
+                        computing
+                    </li>
+                    <li>
+                        Cybersecurity, blockchain, and quantum computing
+                    </li>
+                    <li>Software engineering, IoT, and smart systems</li>
+                    <li>Robotics, automation, and computer vision</li>
+                    <li>
+                        Biomedical engineering and computational biology
+                    </li>
+                </ul>
+                </article>
+            </div>
+
+            <!-- Box 4: Social Sciences -->
+            <div
+                class="col-xl-4 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="400"
+            >
+                <article>
+                <div class="post-img">
+                    <img
+                        src="assets/img/blog/social-science.jpg"
+                        alt=""
+                        class="img-fluid"
+                    />
+                </div>
+                <p class="post-category">
+                    Social Sciences & Humanities
+                </p>
+                <h2 class="title">
+                    <a href="#">People, Culture, and Society</a>
+                </h2>
+                <ul>
+                    <li>
+                        Psychology, behavioral sciences, and human
+                        development
+                    </li>
+                    <li>
+                        Education, digital learning, and curriculum design
+                    </li>
+                    <li>
+                        Sociology, anthropology, and cultural studies
+                    </li>
+                    <li>
+                        Political science, ethics, law, and international
+                        relations
+                    </li>
+                </ul>
+                </article>
+            </div>
+
+            <!-- Box 5: Business & Management -->
+            <div
+                class="col-xl-4 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="500"
+            >
+                <article>
+                <div class="post-img">
+                    <img
+                        src="assets/img/blog/business.jpg"
+                        alt=""
+                        class="img-fluid"
+                    />
+                </div>
+                <p class="post-category">
+                    Business, Economics & Management
+                </p>
+                <h2 class="title">
+                    <a href="#">Leadership, Innovation & Finance</a>
+                </h2>
+                <ul>
+                    <li>
+                        Global economics and financial technologies
+                        (FinTech)
+                    </li>
+                    <li>Innovation, entrepreneurship, and leadership</li>
+                    <li>
+                        Organizational behavior and strategic management
+                    </li>
+                    <li>
+                        Sustainable business, CSR, and ESG frameworks
+                    </li>
+                </ul>
+                </article>
+            </div>
+
+            <!-- Box 6: Interdisciplinary -->
+            <div
+                class="col-xl-4 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="600"
+            >
+                <article>
+                <div class="post-img">
+                    <img
+                        src="assets/img/blog/interdisciplinary.jpg"
+                        alt=""
+                        class="img-fluid"
+                    />
+                </div>
+                <p class="post-category">
+                    Interdisciplinary & Emerging Fields
+                </p>
+                <h2 class="title">
+                    <a href="#">Global Crisis & Advanced Research</a>
+                </h2>
+                <ul>
+                    <li>Health informatics and digital health</li>
+                    <li>One Health and planetary health</li>
+                    <li>
+                        Human-computer interaction and cognitive computing
+                    </li>
+                    <li>Interdisciplinary responses to global crises</li>
+                    <li>Interdisciplinary and translational research</li>
+                </ul>
+                </article>
+            </div>
+        </div>
+        <!-- End row -->
+    </div>
+    <!-- End container -->
+    </section>
+    <!-- /Recent Posts Section -->
+    <section id="submission-guidelines" class="recent-posts section">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Submission Guidelines</h2>
+        <p>
+            Ensure your manuscript follows the required format before
+            submitting to Curevita Research International Nexus (CRIN)
+        </p>
+    </div>
+
+    <div class="container">
+        <div class="row gy-4">
+            <!-- Box 1: Types of Submissions -->
+            <div
+                class="col-xl-4 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="100"
+            >
+                <article>
+                <p class="post-category">Types of Submissions</p>
+                <h2 class="title">
+                    <a href="#">What You Can Submit</a>
+                </h2>
+                <ul>
+                    <li>Original Research Articles</li>
+                    <li>Review Articles</li>
+                    <li>Case Studies</li>
+                    <li>Short Communications</li>
+                    <li>Conceptual Papers</li>
+                    <li>Editorials and Opinion Pieces</li>
+                </ul>
+                </article>
+            </div>
+
+            <!-- Box 2: Manuscript Preparation -->
+            <div
+                class="col-xl-4 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="200"
+            >
+                <article>
+                <p class="post-category">Manuscript Preparation</p>
+                <h2 class="title">
+                    <a href="#">Formatting & Structure</a>
+                </h2>
+                <ul>
+                    <li>Language: English (British or American)</li>
+                    <li>Font: Times New Roman, 12pt, 1.5 spacing</li>
+                    <li>Length: 3,000–7,000 words</li>
+                    <li>
+                        <strong>Structure:</strong>
+                        <ul>
+                            <li>
+                            Title, Abstract (150–300 words), Keywords
+                            (4–6)
+                            </li>
+                            <li>
+                            Introduction, Methodology, Results &
+                            Discussion
+                            </li>
+                            <li>Conclusion, References (APA/MLA/IEEE)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Figures & Tables: High resolution, clearly labeled
+                    </li>
+                </ul>
+                </article>
+            </div>
+
+            <!-- Box 3: Submission Process -->
+            <div
+                class="col-xl-4 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="300"
+            >
+                <article>
+                <p class="post-category">Submission Process</p>
+                <h2 class="title"><a href="#">How to Submit</a></h2>
+                <ul>
+                    <li>Submit via Email or Submission Portal</li>
+                    <li>
+                        <strong>Email:</strong>
+                        <a href="mailto:infocvrb@curevita.org"
+                            >infocvrb@curevita.org</a
+                        >
+                    </li>
+                    <li>
+                        <strong>Include Cover Letter with:</strong>
+                        <ul>
+                            <li>Title of the manuscript</li>
+                            <li>Author names and affiliations</li>
+                            <li>Corresponding author's contact details</li>
+                            <li>Declaration of originality</li>
+                            <li>Conflict of interest statement</li>
+                        </ul>
+                    </li>
+                </ul>
+                </article>
+            </div>
+        </div>
+        <!-- End row -->
+    </div>
+    <!-- End container -->
+    </section>
+    <section id="publication-policies" class="recent-posts section">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Publication Policies</h2>
+        <p>
+            Our commitment to quality, transparency, and ethical
+            publishing practices.
+        </p>
+    </div>
+    <!-- End Section Title -->
+
+    <div class="container">
+        <div class="row gy-4">
+            <!-- Box 1: Peer Review Policy -->
+            <div
+                class="col-xl-4 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="100"
+            >
+                <div class="post-box">
+                <h4>Peer Review Policy</h4>
+                <p>
+                    We follow a double-blind peer review process. Each
+                    submission is reviewed by at least two experts. Final
+                    decisions are made by the editorial team based on the
+                    reviewers’ evaluations. Typical review time is 2–4
+                    weeks.
+                </p>
+                </div>
+            </div>
+
+            <!-- Box 2: Ethical Guidelines -->
+            <div
+                class="col-xl-4 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="200"
+            >
+                <div class="post-box">
+                <h4>Ethical Guidelines</h4>
+                <p>
+                    We adhere to COPE standards. Authors must ensure
+                    originality, cite all sources, disclose conflicts of
+                    interest, and get ethical approval for human/animal
+                    studies.
+                </p>
+                </div>
+            </div>
+
+            <!-- Box 3: Publication Fee -->
+            <div
+                class="col-xl-4 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="300"
+            >
+                <div class="post-box">
+                <h4>Publication Fee</h4>
+                <p>
+                    A nominal Article Processing Charge (APC) of ₹1680, along with a DOI and Barcode fee of ₹1000, totals ₹2680 for Indian authors. For international authors, a flat fee of USD 38 applies to support the open-access distribution of accepted manuscripts.
+                </p>
+                </div>
+            </div>
+
+            <!-- Box 4: Copyright and Licensing -->
+            <div
+                class="col-xl-4 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="400"
+            >
+                <div class="post-box">
+                <h4>Copyright & Licensing</h4>
+                <p>
+                    Authors retain copyright of their work. Publications
+                    are licensed under Creative Commons (CC BY), unless
+                    stated otherwise.
+                </p>
+                </div>
+            </div>
+
+            <!-- Box 5: Indexing and Archiving -->
+            <div
+                class="col-xl-4 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="500"
+            >
+                <div class="post-box">
+                <h4>Indexing & Archiving</h4>
+                <p>
+                    Articles receive a DOI and are archived permanently.
+                    Indexing in reputed databases is ensured through
+                    active partnerships.
+                </p>
+                </div>
+            </div>
+
+            <!-- Box 6: Plagiarism Policy -->
+            <div
+                class="col-xl-4 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="600"
+            >
+                <div class="post-box">
+                <h4>Plagiarism Policy</h4>
+                <p>
+                    Manuscripts must be original. We screen for
+                    plagiarism and reject those with over 15% similarity
+                    (excluding references). Self-plagiarism is not
+                    allowed.
+                </p>
+                </div>
+            </div>
+
+            <!-- Box 7: Withdrawal & Retraction -->
+            <div
+                class="col-xl-4 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="700"
+            >
+                <div class="post-box">
+                <h4>Withdrawal & Retraction</h4>
+                <p>
+                    Authors can withdraw before acceptance via email.
+                    After acceptance, justification is required.
+                    Retractions are issued for ethical violations
+                    post-publication.
+                </p>
+                </div>
+            </div>
+
+            <!-- Box 8: Complaints & Appeals -->
+            <div
+                class="col-xl-4 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="800"
+            >
+                <div class="post-box">
+                <h4>Complaints & Appeals</h4>
+                <p>
+                    Complaints regarding editorial decisions, peer
+                    review, or ethical issues can be formally submitted.
+                    Each case will be independently reviewed by our team.
+                </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section id="document-upload" class="section">
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Document Upload Instructions</h2>
+        <p>
+            For Authors of Curevita Research International Nexus (CRIN)
+        </p>
+    </div>
+
+    <div class="container">
+        <div class="row gy-4">
+            <!-- Email Submission -->
+            <div class="col-lg-6">
+                <div class="box p-4 shadow rounded bg-light">
+                <h4>Email Submission</h4>
+                <p>
+                    Attach both documents in a single email and send to:
+                </p>
+                <p>
+                    <a href="mailto:infocvrb@curevita.org"><i class="fa fa-envelope me-2"></i>infocvrb@curevita.org</a>
+                </p>
+                <p>
+                    <strong>Subject Line:</strong> [Manuscript ID/Title]
+                    – Copyright & Payment Documents
+                </p>
+                <ul>
+                    <li>✔ Format accepted: PDF, JPG, PNG</li>
+                    <li>✔ File size limit: 10 MB</li>
+                    <li>
+                        ✔ Mention your full name and manuscript title in
+                        the email body
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <!-- Online Upload -->
+            <div class="col-lg-6">
+                <div class="box p-4 shadow rounded bg-light">
+                <h4>Online Upload</h4>
+                <p>
+                    Fill in the form and upload files under the following
+                    fields:
+                </p>
+                <ul>
+                    <li><strong>Author Name</strong></li>
+                    <li><strong>Manuscript Title</strong></li>
+                    <li>
+                        <strong>Upload Field 1:</strong> Copyright Form
+                    </li>
+                    <li>
+                        <strong>Upload Field 2:</strong> Payment Receipt
+                    </li>
+                </ul>
+                <p>
+                    <strong
+                        >Click Submit once both documents are
+                        uploaded.</strong
+                    >
+                </p>
+                </div>
+            </div>
+            <!-- Important Notes -->
+            <div class="col-lg-6">
+                <div class="box p-4 shadow rounded bg-light">
+                <h4>Important Notes</h4>
+                <ul>
+                    <li>
+                        ✔ Ensure the Copyright Form is signed by all
+                        contributing authors.
+                    </li>
+                    <li>
+                        ✔ Use clear scans or photographs of documents if
+                        not in digital format.
+                    </li>
+                    <li>
+                        ✔ Double-check your manuscript ID or title is
+                        clearly mentioned in all files or filenames.
+                    </li>
+                    <li>
+                        ✔ Retain a copy of both documents for your
+                        records.
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <!-- Required Documents -->
+            <div class="col-lg-6">
+                <div class="box p-4 shadow rounded bg-light">
+                <h4>📄 Required Documents</h4>
+                <ul class="mt-3">
+                    <li>
+                        ✅ <strong>Copyright Transfer Form</strong> (Duly
+                        signed by all authors)
+                    </li>
+                    <li>
+                        💳 <strong>Payment Receipt</strong> (Proof of
+                        Article Processing Charge payment)
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <!-- Required Documents -->
+            <div class="col-lg-6">
+                <div class="box p-4 shadow rounded bg-light">
+                <h4>📄 Copyright Form &  Paper Template</h4>
+                <ul class="mt-3">
+                    <li class="d-flex justify-content-between">
+                        <span>Copyright Transfer Form</span>
+                        <a
+                        href="/static/assets/pdf/CRIN_Copyright_Transfer_Form.docx"
+                        download
+                        class="btn btn-sm btn-primary p-1 pe-2"
+                        >Download
+                        </a>
+                    </li>
+                    <li class="d-flex justify-content-between mt-1">
+                        <span>Paper Template</span>
+                        <a
+                        href="/static/assets/pdf/CRIN Paper template.docx"
+                        download
+                        class="btn btn-sm btn-primary p-1 pe-2"
+                        >Download
+                        </a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>
+            For queries related to submission, review process, or
+            publication
+        </p>
+    </div>
+    <!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gx-lg-0 gy-4">
+            <div class="col-lg-4">
+                <div
+                class="info-container d-flex flex-column align-items-center justify-content-center"
+                >
+                <div
+                    class="info-item d-flex"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                >
+                    <i
+                        class="bi bi-building flex-shrink-0 me-3 fs-4 text-white"
+                    ></i>
+                    <div>
+                        <h3>Publisher</h3>
+                        <p>Curevita Research Pvt Ltd</p>
+                    </div>
+                </div>
+                <!-- End Info Item -->
+
+                <div
+                    class="info-item d-flex"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                >
+                    <i class="bi bi-telephone flex-shrink-0"></i>
+                    <div>
+                        <h3>Call Us</h3>
+                        <a class="text-light" href="tel:+917987082627">+91-7987-082-627</a>
+                    </div>
+                </div>
+                <!-- End Info Item -->
+
+                <div
+                    class="info-item d-flex"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                >
+                    <i class="bi bi-envelope flex-shrink-0"></i>
+                    <div>
+                        <h3>Email Us</h3>
+                        <a class="text-light" href="mailto:infocvrb@curevita.org">infocvrb@curevita.org</a>
+                    </div>
+                </div>
+                <!-- End Info Item -->
+
+                <div
+                    class="info-item d-flex"
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                >
+                    <i
+                        class="bi bi-globe flex-shrink-0 me-3 fs-4 text-white"
+                    ></i>
+                    <div>
+                        <h3>Website</h3>
+                        <a class="text-light" href="http://www.curevita.org/" target="_blank">www.curevita.org</a>
+                    </div>
+                </div>
+                <!-- End Info Item -->
+                </div>
+            </div>
+
+            <div class="col-lg-8">
+                <form
+                action="forms/contact.php"
+                method="post"
+                class="php-email-form"
+                data-aos="fade"
+                data-aos-delay="100"
+                >
+                <div class="row gy-4">
+                    <div class="col-md-6">
+                        <input
+                            type="text"
+                            name="name"
+                            class="form-control"
+                            placeholder="Your Name"
+                            required=""
+                        />
+                    </div>
+
+                    <div class="col-md-6">
+                        <input
+                            type="email"
+                            class="form-control"
+                            name="email"
+                            placeholder="Your Email"
+                            required=""
+                        />
+                    </div>
+
+                    <div class="col-md-12">
+                        <input
+                            type="text"
+                            class="form-control"
+                            name="subject"
+                            placeholder="Subject"
+                            required=""
+                        />
+                    </div>
+
+                    <div class="col-md-12">
+                        <textarea
+                            class="form-control"
+                            name="message"
+                            rows="8"
+                            placeholder="Message"
+                            required=""
+                        ></textarea>
+                    </div>
+
+                    <div class="col-md-12 text-center">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">
+                            Your message has been sent. Thank you!
+                        </div>
+
+                        <button type="submit">Send Message</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+            <!-- End Contact Form -->
+        </div>
+    </div>
+    </section>
+    <!-- /Contact Section -->
+</main>
+{% endblock %}

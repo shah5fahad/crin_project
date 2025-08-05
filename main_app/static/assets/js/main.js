@@ -22,22 +22,6 @@
   document.addEventListener('scroll', toggleScrolled);
   window.addEventListener('load', toggleScrolled);
 
-  // Show/hide dropdown on hover
-  const dropdown = document.querySelector('#navmenu .dropdown');
-  const menu = dropdown.querySelector('#navmenu .dropdown-menu');
-  dropdown.addEventListener('mouseover', () => menu.style.display = 'block');
-  dropdown.addEventListener('mouseout', () => menu.style.display = 'none');
-  // Toggle on click
-  dropdown.addEventListener('click', (e) => {
-    e.stopPropagation(); // prevent bubbling
-    const isVisible = menu.style.display === 'block';
-    menu.style.display = isVisible ? 'none' : 'block';
-  });
-  // Hide dropdown when clicking outside
-  document.addEventListener('click', () => {
-    menu.style.display = 'none';
-  });
-
   /**
    * Mobile nav toggle
    */
