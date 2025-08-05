@@ -57,16 +57,11 @@
                     
                     <div class="upi-details text-center">
                         <h4>UPI Payment</h4>
-                        <div class="upi-id p-3 bg-light rounded-3 mb-3">
-                            <p class="mb-1">Curevita Research Private Limited UPI ID:</p>
-                            <h5 class="text-primary"><strong>7987082627@okbizaxis</strong></h5>
-                        </div>
                         <p>Scan the QR code below for UPI payment:</p>
-                        <div class="qr-code-placeholder bg-light p-4 rounded-3 d-inline-block">
+                        <div class="qr-code-placeholder bg-light rounded-3 d-inline-block">
                             <!-- Replace with actual QR code image -->
-                            <div class="text-center py-4">
-                                <i class="bi bi-qr-code-scan" style="font-size: 5rem;"></i>
-                                <p class="mt-2">QR Code Image</p>
+                            <div class="text-center">
+                                <img src="{{ url_for('static', filename='assets/img/upi_payment_qr.jpeg') }}" class="img-fluid" style="max-height: 400px;" alt="Google Scholar">  <!-- max-height से image की ऊंचाई कम की -->
                             </div>
                         </div>
                     </div>
