@@ -6,306 +6,382 @@
 <main class="main">
     <!-- Hero Section -->
     <section id="hero" class="hero section accent-background top_background_img">
-    <div
-        class="container position-relative"
-        data-aos="fade-up"
-        data-aos-delay="100"
-    >
-        <div class="row gy-5 justify-content-between">
-            <div
-                class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center"
-            >
-                <div style="text-align: center; color: white; font-size: 28px; line-height: 1.2; font-family: monospace; font-weight: bold;">
-                International Multi-Disciplinary Journal
-                </div>
+        <div
+            class="container position-relative"
+            data-aos="fade-up"
+            data-aos-delay="100"
+        >
+            <div class="row gy-5 justify-content-between">
+                <div
+                    class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center"
+                >
+                    <div style="text-align: center; color: white; font-size: 28px; line-height: 1.2; font-family: monospace; font-weight: bold;">
+                    International Multi-Disciplinary Journal
+                    </div>
 
-                <div style="text-align: center; color: white; font-size: 19px; margin-top: 8px; font-family: cursive;">
-                A peer-reviewed and refereed online journal — openly
-                accessible, widely indexed, multidisciplinary, and
-                globally recognized for academic and scholarly
-                excellence.
+                    <div style="text-align: center; color: white; font-size: 19px; margin-top: 8px; font-family: cursive;">
+                    A peer-reviewed and refereed online journal — openly
+                    accessible, widely indexed, multidisciplinary, and
+                    globally recognized for academic and scholarly
+                    excellence.
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-5 order-1 order-lg-2">
-                <img
-                src="{{ url_for('static', filename='assets/img/image-3.png') }}"
-                class="img-fluid"
-                alt=""
-                />
+                <div class="col-lg-5 order-1 order-lg-2">
+                    <img
+                    src="{{ url_for('static', filename='assets/img/image-3.png') }}"
+                    class="img-fluid"
+                    alt=""
+                    />
+                </div>
             </div>
         </div>
-    </div>
 
-    <div
-        class="icon-boxes position-relative"
-        data-aos="fade-up"
-        data-aos-delay="200"
-    >
-        <div class="container position-relative">
-            <div class="row gy-4 mt-5">
-                <div class="col-xl-3 col-md-6">
-                <div class="icon-box">
-                    <div class="icon">
-                        <i class="bi bi-journal-text"></i>
+        <div
+            class="icon-boxes position-relative"
+            data-aos="fade-up"
+            data-aos-delay="200"
+        >
+            <div class="container position-relative">
+                <div class="row gy-4 mt-5">
+                    <div class="col-xl-3 col-md-6">
+                    <div class="icon-box">
+                        <div class="icon">
+                            <i class="bi bi-journal-text"></i>
+                        </div>
+                        <h4 class="title">
+                            <a href="/peer_reviewed" class="stretched-link"
+                                >Peer-Reviewed Papers</a
+                            >
+                        </h4>
                     </div>
-                    <h4 class="title">
-                        <a href="/peer_reviewed" class="stretched-link"
-                            >Peer-Reviewed Papers</a
-                        >
-                    </h4>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bi bi-globe"></i></div>
+                        <h4 class="title">
+                            <a href="#global_index" class="stretched-link"
+                                >Global Indexing</a
+                            >
+                        </h4>
+                    </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6">
+                    <div class="icon-box">
+                        <div class="icon">
+                            <i class="bi bi-cloud-upload"></i>
+                        </div>
+                        <h4 class="title">
+                            <a href="#" class="stretched-link"
+                                >Easy Online Submission</a
+                            >
+                        </h4>
+                    </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6">
+                    <div class="icon-box">
+                        <div class="icon">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <h4 class="title">
+                            <a href="/ugc_care" class="stretched-link"
+                                >UGC-CARE Guidelines</a
+                            >
+                        </h4>
+                    </div>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section id="reward-section" class="call-to-action section dark-background">
+        <div class="container py-2">
+            <img
+                src="{{ url_for('static', filename='assets/img/science.webp') }}"
+                alt=""
+            />
+            <div
+                class="content row justify-content-center"
+                data-aos="zoom-in"
+                data-aos-delay="100"
+            >
+                <div class="reward-header">
+                    <div class="reward-badge" aria-hidden="true">
+                        <!-- Trophy icon -->
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 21h8M12 17v4M7 4h10v3a5 5 0 0 1-5 5 5 5 0 0 1-5-5V4Z" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M7 7H5a3 3 0 0 0 3 3M17 7h2a3 3 0 0 1-3 3" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 id="opportunities-title" class="opportunities-title">OPPORTUNITIES &amp; REWARDS</h1>
+                        <p class="opportunities-subtitle">Grow your impact with access, recognition, and expert guidance.</p>
+                    </div>
+                </div>
+                <div class="reward-content">
+                    <article class="reward-item">
+                        <div class="reward-icon" aria-hidden="true">
+                        <!-- Ticket/Pass icon -->
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 9a3 3 0 1 0 0 6v3a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-3a3 3 0 1 1 0-6V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v3Z" stroke="white" stroke-width="1.5"/>
+                        </svg>
+                        </div>
+                        <div>
+                        <h3>Free Participation</h3>
+                        <p>Access to workshops, FDPs, webinars, and symposia organized by Curevita Research.</p>
+                        </div>
+                    </article>
+            
+                    <article class="reward-item">
+                        <div class="reward-icon" aria-hidden="true">
+                        <!-- Book/Bookmark icon -->
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 4h7a4 4 0 0 1 4 4v12l-4-2-4 2V8a4 4 0 0 0-4-4Z" stroke="white" stroke-width="1.5"/>
+                        </svg>
+                        </div>
+                        <div>
+                        <h3>Knowledge Access</h3>
+                        <p>Complimentary subscription to eNews Later and current affairs updates.</p>
+                        </div>
+                    </article>
+            
+                    <article class="reward-item">
+                        <div class="reward-icon" aria-hidden="true">
+                        <!-- Award/Medal icon -->
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 15a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z" stroke="white" stroke-width="1.5"/>
+                            <path d="M9 14v7l3-2 3 2v-7" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        </div>
+                        <div>
+                        <h3>Recognition &amp; Rewards</h3>
+                        <p>Best Paper Awards with special certificates; recommendation rewards for high-impact research enhancing academic, research, and industry careers.</p>
+                        </div>
+                    </article>
+            
+                    <article class="reward-item">
+                        <div class="reward-icon" aria-hidden="true">
+                        <!-- Users/Handshake icon -->
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm8 0a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" stroke="white" stroke-width="1.5"/>
+                            <path d="M3 21v-1a6 6 0 0 1 6-6h6a6 6 0 0 1 6 6v1" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        </div>
+                        <div>
+                        <h3>Mentorship &amp; Guidance</h3>
+                        <p>Early-career authors receive mentorship from leading scientists, professors, and industry experts.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section id="services" class="services section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Our Services</h2>
+            <p>
+                Explore our key offerings that support authors, researchers,
+                and the academic community globally.
+            </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+            <div class="row gy-4">
+                <div
+                    class="col-lg-4 col-md-6"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                >
+                    <div class="service-item position-relative">
+                    <div class="icon">
+                        <i class="bi bi-journal-check"></i>
+                    </div>
+                    <h3>Peer-Reviewed Publication</h3>
+                    <p>
+                        All submitted papers undergo rigorous peer review
+                        ensuring high academic quality and research
+                        standards.
+                    </p>
+                    <a href="/peer_reviewed" class="readmore stretched-link">
+                        Read more <i class="bi bi-arrow-right"></i>
+                    </a>
+                    </div>
                 </div>
 
-                <div class="col-xl-3 col-md-6">
-                <div class="icon-box">
-                    <div class="icon"><i class="bi bi-globe"></i></div>
-                    <h4 class="title">
-                        <a href="#global_index" class="stretched-link"
-                            >Global Indexing</a
-                        >
-                    </h4>
-                </div>
-                </div>
-
-                <div class="col-xl-3 col-md-6">
-                <div class="icon-box">
+                <div
+                    class="col-lg-4 col-md-6"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                >
+                    <div class="service-item position-relative">
                     <div class="icon">
                         <i class="bi bi-cloud-upload"></i>
                     </div>
-                    <h4 class="title">
-                        <a href="#" class="stretched-link"
-                            >Easy Online Submission</a
-                        >
-                    </h4>
-                </div>
+                    <h3>Easy Online Submission</h3>
+                    <p>
+                        Submit your research online using our simple and
+                        intuitive paper submission platform.
+                    </p>
+                    <a href="#" class="readmore stretched-link"
+                        >Read more <i class="bi bi-arrow-right"></i
+                    ></a>
+                    </div>
                 </div>
 
-                <div class="col-xl-3 col-md-6">
-                <div class="icon-box">
+                <div
+                    class="col-lg-4 col-md-6"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                >
+                    <div class="service-item position-relative">
+                    <div class="icon">
+                        <i class="bi bi-globe"></i>
+                    </div>
+                    <h3>Global Indexing</h3>
+                    <p>
+                        Our journal is indexed by major research databases
+                        including Google Scholar, Academia, and more.
+                    </p>
+                    <a href="#global_index" class="readmore stretched-link"
+                        >Read more <i class="bi bi-arrow-right"></i
+                    ></a>
+                    </div>
+                </div>
+
+                <div
+                    class="col-lg-4 col-md-6"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                >
+                    <div class="service-item position-relative">
+                    <div class="icon">
+                        <i class="bi bi-badge-ad"></i>
+                    </div>
+                    <h3>DOI Allocation</h3>
+                    <p>
+                        Each published paper receives a unique CrossRef DOI
+                        for better visibility and citation tracking.
+                    </p>
+                    <a href="/DOI_Allocation" class="readmore stretched-link"
+                        >Read more <i class="bi bi-arrow-right"></i
+                    ></a>
+                    </div>
+                </div>
+
+                <div
+                    class="col-lg-4 col-md-6"
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                >
+                    <div class="service-item position-relative">
                     <div class="icon">
                         <i class="bi bi-shield-check"></i>
                     </div>
-                    <h4 class="title">
-                        <a href="/ugc_care" class="stretched-link"
-                            >UGC-CARE Guidelines</a
-                        >
-                    </h4>
+                    <h3>UGC-CARE Guidelines</h3>
+                    <p>
+                        Our publication follows UGC-CARE recommendations and
+                        maintains compliance with ethical research practices.
+                    </p>
+                    <a href="/ugc_care" class="readmore stretched-link"
+                        >Read more <i class="bi bi-arrow-right"></i
+                    ></a>
+                    </div>
                 </div>
+
+                <div
+                    class="col-lg-4 col-md-6"
+                    data-aos="fade-up"
+                    data-aos-delay="600"
+                >
+                    <div class="service-item position-relative">
+                    <div class="icon">
+                        <i class="bi bi-chat-square-text"></i>
+                    </div>
+                    <h3>24x7 Support</h3>
+                    <p>
+                        Dedicated support through email, phone, and WhatsApp
+                        to assist authors at every stage of publication.
+                    </p>
+                    <a href="#contact" class="readmore stretched-link"
+                        >Read more <i class="bi bi-arrow-right"></i
+                    ></a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    </section>
-    <!-- /Hero Section -->
-
-
-    
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-        <h2>Our Services</h2>
-        <p>
-            Explore our key offerings that support authors, researchers,
-            and the academic community globally.
-        </p>
-    </div>
-    <!-- End Section Title -->
-
-    <div class="container">
-        <div class="row gy-4">
-            <div
-                class="col-lg-4 col-md-6"
-                data-aos="fade-up"
-                data-aos-delay="100"
-            >
-                <div class="service-item position-relative">
-                <div class="icon">
-                    <i class="bi bi-journal-check"></i>
-                </div>
-                <h3>Peer-Reviewed Publication</h3>
-                <p>
-                    All submitted papers undergo rigorous peer review
-                    ensuring high academic quality and research
-                    standards.
-                </p>
-                <a href="/peer_reviewed" class="readmore stretched-link">
-                    Read more <i class="bi bi-arrow-right"></i>
-                </a>
-                </div>
-            </div>
-
-            <div
-                class="col-lg-4 col-md-6"
-                data-aos="fade-up"
-                data-aos-delay="200"
-            >
-                <div class="service-item position-relative">
-                <div class="icon">
-                    <i class="bi bi-cloud-upload"></i>
-                </div>
-                <h3>Easy Online Submission</h3>
-                <p>
-                    Submit your research online using our simple and
-                    intuitive paper submission platform.
-                </p>
-                <a href="#" class="readmore stretched-link"
-                    >Read more <i class="bi bi-arrow-right"></i
-                ></a>
-                </div>
-            </div>
-
-            <div
-                class="col-lg-4 col-md-6"
-                data-aos="fade-up"
-                data-aos-delay="300"
-            >
-                <div class="service-item position-relative">
-                <div class="icon">
-                    <i class="bi bi-globe"></i>
-                </div>
-                <h3>Global Indexing</h3>
-                <p>
-                    Our journal is indexed by major research databases
-                    including Google Scholar, Academia, and more.
-                </p>
-                <a href="#global_index" class="readmore stretched-link"
-                    >Read more <i class="bi bi-arrow-right"></i
-                ></a>
-                </div>
-            </div>
-
-            <div
-                class="col-lg-4 col-md-6"
-                data-aos="fade-up"
-                data-aos-delay="400"
-            >
-                <div class="service-item position-relative">
-                <div class="icon">
-                    <i class="bi bi-badge-ad"></i>
-                </div>
-                <h3>DOI Allocation</h3>
-                <p>
-                    Each published paper receives a unique CrossRef DOI
-                    for better visibility and citation tracking.
-                </p>
-                <a href="/DOI_Allocation" class="readmore stretched-link"
-                    >Read more <i class="bi bi-arrow-right"></i
-                ></a>
-                </div>
-            </div>
-
-            <div
-                class="col-lg-4 col-md-6"
-                data-aos="fade-up"
-                data-aos-delay="500"
-            >
-                <div class="service-item position-relative">
-                <div class="icon">
-                    <i class="bi bi-shield-check"></i>
-                </div>
-                <h3>UGC-CARE Guidelines</h3>
-                <p>
-                    Our publication follows UGC-CARE recommendations and
-                    maintains compliance with ethical research practices.
-                </p>
-                <a href="/ugc_care" class="readmore stretched-link"
-                    >Read more <i class="bi bi-arrow-right"></i
-                ></a>
-                </div>
-            </div>
-
-            <div
-                class="col-lg-4 col-md-6"
-                data-aos="fade-up"
-                data-aos-delay="600"
-            >
-                <div class="service-item position-relative">
-                <div class="icon">
-                    <i class="bi bi-chat-square-text"></i>
-                </div>
-                <h3>24x7 Support</h3>
-                <p>
-                    Dedicated support through email, phone, and WhatsApp
-                    to assist authors at every stage of publication.
-                </p>
-                <a href="#contact" class="readmore stretched-link"
-                    >Read more <i class="bi bi-arrow-right"></i
-                ></a>
-                </div>
-            </div>
-        </div>
-    </div>
     </section>
     <!-- global_index Section -->
     <section id="global_index" class="global_index section">  
-    <div  class="container section-title" data-aos="fade-up">
-        <!-- Centered Heading -->
-        <h2 class="text-center fw-bold mb-3">Global Indexing</h2>  
-        <!-- First Row -->
-        <div class="row justify-content-center mb-2">  
-                <div class="col-6 col-md-3 text-center p-2">  
-                <img src="{{ url_for('static', filename='assets/img/google-scholar.png') }}" class="img-fluid" style="max-height: 80px;" alt="Google Scholar">  <!-- max-height से image की ऊंचाई कम की -->
-                </div>
-                <div class="col-6 col-md-3 text-center p-2">
-                <img src="{{ url_for('static', filename='assets/img/research-gate.png') }}" class="img-fluid" style="max-height: 80px;" alt="Research Gate">
-                </div>
-                <div class="col-6 col-md-3 text-center p-2">
-                <img src="{{ url_for('static', filename='assets/img/arxiv01.jpg') }}" class="img-fluid" style="max-height: 80px;" alt="ArXiv">
-                </div>
-                <div class="col-6 col-md-3 text-center p-2">
-                <img src="{{ url_for('static', filename='assets/img/openAire.jpg') }}" class="img-fluid" style="max-height: 80px;" alt="OpenAIRE">
-                </div>
-        </div>
+        <div  class="container section-title" data-aos="fade-up">
+            <!-- Centered Heading -->
+            <h2 class="text-center fw-bold mb-3">Global Indexing</h2>  
+            <!-- First Row -->
+            <div class="row justify-content-center mb-2">  
+                    <div class="col-6 col-md-3 text-center p-2">  
+                    <img src="{{ url_for('static', filename='assets/img/google-scholar.png') }}" class="img-fluid" style="max-height: 80px;" alt="Google Scholar">  <!-- max-height से image की ऊंचाई कम की -->
+                    </div>
+                    <div class="col-6 col-md-3 text-center p-2">
+                    <img src="{{ url_for('static', filename='assets/img/research-gate.png') }}" class="img-fluid" style="max-height: 80px;" alt="Research Gate">
+                    </div>
+                    <div class="col-6 col-md-3 text-center p-2">
+                    <img src="{{ url_for('static', filename='assets/img/arxiv01.jpg') }}" class="img-fluid" style="max-height: 80px;" alt="ArXiv">
+                    </div>
+                    <div class="col-6 col-md-3 text-center p-2">
+                    <img src="{{ url_for('static', filename='assets/img/openAire.jpg') }}" class="img-fluid" style="max-height: 80px;" alt="OpenAIRE">
+                    </div>
+            </div>
 
-        <!-- Second Row -->
-        <div class="row justify-content-center">
-                <div class="col-6 col-md-3 text-center p-2">
-                <img src="{{ url_for('static', filename='assets/img/DOI_logo.png') }}" class="img-fluid" style="max-height: 80px;" alt="DOI">
-                </div>
-                <div class="col-6 col-md-3 text-center p-2">
-                <img src="{{ url_for('static', filename='assets/img/logo-crossref.png') }}" class="img-fluid" style="max-height: 80px;" alt="Crossref">
-                </div>
-                <div class="col-6 col-md-3 text-center p-2">
-                <img src="{{ url_for('static', filename='assets/img/zonodo1.jpg') }}" class="img-fluid" style="max-height: 80px;" alt="Zenodo">
-                </div>
-                <div class="col-6 col-md-3 text-center p-2">
-                <img src="{{ url_for('static', filename='assets/img/doaj.png') }}" class="img-fluid" style="max-height: 80px;" alt="DOAJ">
-                </div>
+            <!-- Second Row -->
+            <div class="row justify-content-center">
+                    <div class="col-6 col-md-3 text-center p-2">
+                    <img src="{{ url_for('static', filename='assets/img/DOI_logo.png') }}" class="img-fluid" style="max-height: 80px;" alt="DOI">
+                    </div>
+                    <div class="col-6 col-md-3 text-center p-2">
+                    <img src="{{ url_for('static', filename='assets/img/logo-crossref.png') }}" class="img-fluid" style="max-height: 80px;" alt="Crossref">
+                    </div>
+                    <div class="col-6 col-md-3 text-center p-2">
+                    <img src="{{ url_for('static', filename='assets/img/zonodo1.jpg') }}" class="img-fluid" style="max-height: 80px;" alt="Zenodo">
+                    </div>
+                    <div class="col-6 col-md-3 text-center p-2">
+                    <img src="{{ url_for('static', filename='assets/img/doaj.png') }}" class="img-fluid" style="max-height: 80px;" alt="DOAJ">
+                    </div>
+            </div>
         </div>
-    </div>
     </section>
     <!-- /Services Section -->
     <section
     id="call-to-action"
     class="call-to-action section dark-background"
     >
-    <div class="container">
-        <img
-            src="{{ url_for('static', filename='assets/img/science.webp') }}"
-            alt=""
-        />
-        <div
-            class="content row justify-content-center"
-            data-aos="zoom-in"
-            data-aos-delay="100"
-        >
-            <div class="col-xl-10">
-                <div class="text-center">
-                <h3>Current Issue</h3>
-                <h3>Volume 3, Issue 5</h3>
-                <hr />
-                <h4>
-                    Submit Research Work for Consideration of Publication
-                </h4>
-                <a class="cta-btn" href="/current_issue">Submit Papers</a>
+        <div class="container">
+            <img
+                src="{{ url_for('static', filename='assets/img/science.webp') }}"
+                alt=""
+            />
+            <div
+                class="content row justify-content-center"
+                data-aos="zoom-in"
+                data-aos-delay="100"
+            >
+                <div class="col-xl-10">
+                    <div class="text-center">
+                    <h3>Current Issue</h3>
+                    <h3>Volume 1, Issue 5</h3>
+                    <hr />
+                    <h4>
+                        Submit Research Work for Consideration of Publication
+                    </h4>
+                    <a class="cta-btn" href="/current_issue">Submit Papers</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </section>
-    <!-- /Call To Action Section -->
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section">
     <!-- Section Title -->
@@ -316,8 +392,6 @@
             commitment to academic excellence.
         </p>
     </div>
-    <!-- End Section Title -->
-
     <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="swiper init-swiper">
             <script type="application/json" class="swiper-config">
@@ -1310,7 +1384,7 @@
                 <div class="post-box">
                 <h4>Publication Fee</h4>
                 <p>
-                    A nominal Article Processing Charge (APC) of ₹1680, along with a DOI and Barcode fee of ₹1000, totals ₹2680 for Indian authors. For international authors, a flat fee of USD 38 applies to support the open-access distribution of accepted manuscripts.
+                    A nominal Article Processing Charge (APC)- 10,000 INR and for international 148 USD may apply to support open-access dissemination.
                 </p>
                 </div>
             </div>
@@ -1495,32 +1569,6 @@
                     <li>
                         💳 <strong>Payment Receipt</strong> (Proof of
                         Article Processing Charge payment)
-                    </li>
-                </ul>
-                </div>
-            </div>
-            <!-- Required Documents -->
-            <div class="col-lg-6">
-                <div class="box p-4 shadow rounded bg-light">
-                <h4>📄 Copyright Form &  Paper Template</h4>
-                <ul class="mt-3">
-                    <li class="d-flex justify-content-between">
-                        <span>Copyright Transfer Form</span>
-                        <a
-                        href="/static/assets/pdf/CRIN_Copyright_Transfer_Form.docx"
-                        download
-                        class="btn btn-sm btn-primary p-1 pe-2"
-                        >Download
-                        </a>
-                    </li>
-                    <li class="d-flex justify-content-between mt-1">
-                        <span>Paper Template</span>
-                        <a
-                        href="/static/assets/pdf/CRIN Paper template.docx"
-                        download
-                        class="btn btn-sm btn-primary p-1 pe-2"
-                        >Download
-                        </a>
                     </li>
                 </ul>
                 </div>
