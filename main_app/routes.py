@@ -59,3 +59,7 @@ def mining_activities():
 @app.route('/groundwater_levels')
 def groundwater_levels():
     return render_template('Groundwater_levels.html')
+
+@app.route('/group')
+def group():
+    return render_template('group.html')
