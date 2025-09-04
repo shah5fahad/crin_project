@@ -7,6 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
     
@@ -14,7 +15,7 @@
       --primary: #2c3e50;
       --secondary: #f39c12;
       --accent1: #3498db;
-      --accent2: #e74c3c;
+      --accent2: #154852;
       --accent3: #2ecc71;
       --accent4: #9b59b6;
       --light: #ecf0f1;
@@ -474,9 +475,9 @@
     
     /* Journal-specific colors */
     .fhima { background: linear-gradient(135deg, var(--accent1) 0%, var(--primary) 100%); }
-    .crin { background: linear-gradient(135deg, var(--accent2) 0%, #c0392b 100%); }
-    .cibdi { background: linear-gradient(135deg, var(--accent3) 0%, #27ae60 100%); }
-    .faai { background: linear-gradient(135deg, var(--secondary) 0%, #d35400 100%); }
+    .crin { background: linear-gradient(135deg, var(--accent2) 0%, #312bc0 100%); }
+    .cibdi { background: linear-gradient(135deg, var(--accent3) 0%, #2827ae 100%); }
+    .faai { background: linear-gradient(135deg, var(--secondary) 0%, #00d397 100%); }
     
     /* CTA Section */
     .cta-section {
@@ -833,70 +834,111 @@
     </div>
   </section>
 
-  <!-- Journals Section -->
-  <section id="journals" class="journals-section">
+  <!-- Journals Section with Auto Slide -->
+  <section id="journals" class="journals-section py-5">
     <div class="container">
-      <h2 class="text-center section-title" data-aos="fade-up">Our Journals</h2>
-      <div class="row">
-        <!-- FHIMA Journal -->
-        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-          <div class="journal-card">
-            <div class="journal-header fhima">
-              <div class="journal-icon"><i class="fas fa-microscope"></i></div>
-              <h3 class="journal-title">FHIMA</h3>
-            </div>
-            <div class="journal-body">
-              <h4>Frontiers of Health Innovations and Medical Advances</h4>
-              <p class="journal-description">Publishing cutting-edge research in medical technology, healthcare innovations, and clinical advancements.</p>
-              <button class="journal-btn">Learn More</button>
-            </div>
-          </div>
-        </div>
-        
-        <!-- CRIN Journal -->
-        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-          <div class="journal-card">
-            <div class="journal-header crin">
-              <div class="journal-icon"><i class="fas fa-globe"></i></div>
-              <h3 class="journal-title">CRIN</h3>
-            </div>
-            <div class="journal-body">
-              <h4>Curevita Research International Nexus</h4>
-              <p class="journal-description">A multidisciplinary journal connecting global research across scientific domains and international collaborations.</p>
-              <button class="journal-btn">Learn More</button>
+      <h2 class="text-center section-title mb-4" data-aos="fade-up">Our Journals</h2>
+      <!-- Slider main container -->
+      <div class="swiper journals-slider">
+        <div class="swiper-wrapper">
+          <!-- FHIMA Journal -->
+          <div class="swiper-slide" data-aos="fade-up" data-aos-delay="100">
+            <div class="journal-card">
+              <a class="text-decoration-none" href="https://fhim.curevitajournals.com/" target="_blank">
+                <div class="journal-header fhima" style="padding-top: 75px; padding-bottom: 75px;">
+                  <div class="journal-icon">
+                    <img src="{{ url_for('static', filename='assets/img/fhim_logo.png') }}" class="img-fluid" alt="FHIMA" />
+                  </div>
+                  <h3 class="journal-title">FHIMA</h3>
+                </div>
+                <div class="journal-body">
+                  <h4>Frontiers of Health Innovations and Medical Advances</h4>
+                  <p class="text-muted">Publishing cutting-edge research in medical technology, healthcare innovations, and clinical advancements.</p>
+                  <button class="journal-btn">Learn More</button>
+                </div>
+              </a>
             </div>
           </div>
-        </div>
-        
-        <!-- CIBDI Journal -->
-        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-          <div class="journal-card">
-            <div class="journal-header cibdi">
-              <div class="journal-icon"><i class="fas fa-dna"></i></div>
-              <h3 class="journal-title">CIBDI</h3>
-            </div>
-            <div class="journal-body">
-              <h4>Curevita Innovation of BioData Intelligence</h4>
-              <p class="journal-description">Exploring the intersection of biological data, AI, and computational approaches to solve complex biological problems.</p>
-              <button class="journal-btn">Learn More</button>
-            </div>
-          </div>
-        </div>
-        
-        <!-- FAAI Journal -->
-        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
-          <div class="journal-card">
-            <div class="journal-header faai">
-              <div class="journal-icon"><i class="fas fa-leaf"></i></div>
-              <h3 class="journal-title">FAAI</h3>
-            </div>
-            <div class="journal-body">
-              <h4>Frontiers of Agri & Animal Innovation</h4>
-              <p class="journal-description">Advancing research in agricultural sciences, animal husbandry, and sustainable farming practices.</p>
-              <button class="journal-btn">Learn More</button>
+
+          <!-- FERI Journal -->
+          <div class="swiper-slide" data-aos="fade-up" data-aos-delay="400">
+            <div class="journal-card">
+              <a class="text-decoration-none" href="https://feri.curevitajournals.com/" target="_blank">
+                <div class="journal-header faai" style="padding-top: 75px; padding-bottom: 75px;">
+                  <div class="journal-icon">
+                    <img src="{{ url_for('static', filename='assets/img/feri_logo.png') }}" class="img-fluid" alt="FERI" />
+                  </div>
+                  <h3 class="journal-title">FAAI</h3>
+                </div>
+                <div class="journal-body">
+                  <h4>Frontiers of Ecovitality & Resilient Innovation</h4>
+                  <p class="text-muted">International peer-reviewed journal advancing research in ecology, vitality sciences, environmental health, and sustainable innovation.</p>
+                  <button class="journal-btn">Learn More</button>
+                </div>
+              </a>
             </div>
           </div>
+
+          <!-- CRIN Journal -->
+          <div class="swiper-slide" data-aos="fade-up" data-aos-delay="200">
+            <div class="journal-card">
+              <a class="text-decoration-none" href="https://curevitajournals.com/home" target="_blank">
+                <div class="journal-header crin">
+                  <div class="journal-icon">
+                    <img src="{{ url_for('static', filename='assets/img/crin_logo.png') }}" class="img-fluid" alt="CRIN" />
+                  </div>
+                  <h3 class="journal-title">CRIN</h3>
+                </div>
+                <div class="journal-body">
+                  <h4>Curevita Research International Nexus</h4>
+                  <p class="text-muted">A multidisciplinary journal connecting global research across scientific domains and collaborations.</p>
+                  <button class="journal-btn">Learn More</button>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- CIBDI Journal -->
+          <div class="swiper-slide" data-aos="fade-up" data-aos-delay="300">
+            <div class="journal-card">
+              <a class="text-decoration-none" href="https://cibdi.curevitajournals.com/" target="_blank">
+                <div class="journal-header cibdi">
+                  <div class="journal-icon">
+                    <img src="{{ url_for('static', filename='assets/img/cibdi_logo.png') }}" class="img-fluid" alt="CIBDI" />
+                  </div>
+                  <h3 class="journal-title">CIBDI</h3>
+                </div>
+                <div class="journal-body">
+                  <h4>Curevita Innovation of BioData Intelligence</h4>
+                  <p class="text-muted">Exploring the intersection of biological data, AI, and computational approaches to solve complex problems.</p>
+                  <button class="journal-btn">Learn More</button>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- FAAI Journal -->
+          <div class="swiper-slide" data-aos="fade-up" data-aos-delay="400">
+            <div class="journal-card">
+              <a class="text-decoration-none" href="https://faai.curevitajournals.com/" target="_blank">
+                <div class="journal-header faai">
+                  <div class="journal-icon">
+                    <img src="{{ url_for('static', filename='assets/img/faai_logo.png') }}" class="img-fluid" alt="FAAI" />
+                  </div>
+                  <h3 class="journal-title">FAAI</h3>
+                </div>
+                <div class="journal-body">
+                  <h4>Frontiers of Agri & Animal Innovation</h4>
+                  <p class="text-muted">Advancing research in agricultural sciences, animal husbandry, and sustainable farming practices.</p>
+                  <button class="journal-btn">Learn More</button>
+                </div>
+              </a>
+            </div>
+          </div>
+
         </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
       </div>
     </div>
   </section>
@@ -1011,10 +1053,11 @@
         <div class="col-lg-2 col-md-4 mb-4 mb-md-0 footer-links">
           <h5>Journals</h5>
           <ul>
-            <li><a href="#">FHIMA</a></li>
-            <li><a href="#">CRIN</a></li>
-            <li><a href="#">CIBDI</a></li>
-            <li><a href="#">FAAI</a></li>
+            <li><a href="https://fhim.curevitajournals.com/" target="_blank">FHIMA</a></li>
+            <li><a href="https://curevitajournals.com/home" target="_blank">CRIN</a></li>
+            <li><a href="https://cibdi.curevitajournals.com/" target="_blank">CIBDI</a></li>
+            <li><a href="https://faai.curevitajournals.com/" target="_blank">FAAI</a></li>
+            <li><a href="https://feri.curevitajournals.com/" target="_blank">FERI</a></li>
           </ul>
         </div>
         <div class="col-lg-4 col-md-4 footer-links">
@@ -1036,6 +1079,29 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      new Swiper('.journals-slider', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        breakpoints: {
+          768: { slidesPerView: 2 },
+          992: { slidesPerView: 3 },
+          1200: { slidesPerView: 4 },
+        },
+      });
+    });
+  </script>
   <script>
     // Initialize AOS
     AOS.init({

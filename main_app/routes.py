@@ -3,6 +3,10 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route('/')
+def group():
+    return render_template('group.html')
+
+@app.route('/home')
 def home():
     return render_template("homepage.html")
 
@@ -59,7 +63,3 @@ def mining_activities():
 @app.route('/groundwater_levels')
 def groundwater_levels():
     return render_template('Groundwater_levels.html')
-
-@app.route('/group')
-def group():
-    return render_template('group.html')
