@@ -14,8 +14,8 @@
     :root {
       --primary: #232d2c;
       --secondary: #f39c12;
-      --accent1: #3498db;
-      --accent2: #154852;
+      --accent1: #8fbfdc84;
+      --accent2: #4e7b85ff;
       --accent3: #2ecc71;
       --accent4: #9b59b6;
       --light: #ecf0f1;
@@ -199,7 +199,6 @@
     
     /* About Section Styles */
     .about-section {
-      padding: 100px 0;
       position: relative;
       overflow: hidden;
     }
@@ -475,7 +474,7 @@
     
     /* Journal-specific colors */
     .fhima { background: linear-gradient(135deg, var(--accent1) 0%, var(--primary) 100%); }
-    .crin { background: linear-gradient(135deg, var(--accent2) 0%, #312bc0 100%); }
+    .crin { background: linear-gradient(135deg, var(--accent2) 0%, #bfbddf83 100%); }
     .cibdi { background: linear-gradient(135deg, var(--accent3) 0%, #2827ae 100%); }
     .faai { background: linear-gradient(135deg, var(--secondary) 0%, #00d397 100%); }
     
@@ -639,6 +638,29 @@
       padding-top: 20px;
       border-top: 1px solid rgba(255,255,255,0.1);
     }
+
+    .top-header .logo {
+      line-height: 1;
+    }
+
+    .top-header .logo img {
+      max-height: 50px;
+      margin-right: 8px;
+      border-radius: 8px;
+    }
+
+    .top-header .logo h1 {
+      font-size: 30px;
+      margin: 0;
+      font-weight: 700;
+      color: var(--heading-color);
+    }
+
+    .top-header .logo span {
+      font-size: 32px;
+      margin-left: 2px;
+      color: var(--nav-hover-color);
+    }
     
     /* Animations */
     @keyframes fadeInUp {
@@ -681,9 +703,23 @@
   <div id="particles-js"></div>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <nav class="top-header navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Curevita <span class="text-warning">Research</span></a>
+      <a href="/" class="logo d-flex align-items-center text-decoration-none">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img
+            src="{{ url_for('static', filename='assets/img/file-3i0SDQN6Ojb5x94AKMPiXW63.webp') }}"
+            alt=""
+        />
+
+        <div class="sitename text-light fs-5">
+            Curevita
+            <hr
+              style="margin: 0 !important; opacity: 0.5 !important;"
+            />
+            Research
+        </div>
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -837,42 +873,6 @@
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="about-section">
-    <div class="floating-shape shape-1"></div>
-    <div class="floating-shape shape-2"></div>
-    
-    <div class="container">
-      <div class="about-content" data-aos="fade-up" data-aos-duration="1500">
-        <h2 class="about-title">About Curevita Journals</h2>
-        
-        <div class="row">
-          <div class="col-lg-12">
-            <p class="about-text" data-aos="fade-right" data-aos-delay="200">
-              <span class="highlight">Curevita Research Journals</span> is a global platform committed to advancing scientific
-              discovery, innovation, and interdisciplinary knowledge. Guided by a vision to
-              connect research with real-world impact, we publish high-quality, peer-reviewed
-              journals spanning life sciences, health, agriculture, technology, environmental
-              studies, and beyond.
-            </p>
-            
-            <p class="about-text" data-aos="fade-right" data-aos-delay="300">
-              With rigorous editorial standards and adherence to international indexing norms,
-              Curevita Research Journals serves as a bridge between researchers, academicians,
-              industry experts, and policymakers. We promote open access, ethical publishing,
-              and collaborative scholarship to ensure that breakthrough ideas reach the global
-              community.
-            </p>
-            
-            <p class="about-text" data-aos="fade-right" data-aos-delay="400">
-              <span class="highlight">Where Knowledge Meets Innovation, and Research Shapes Tomorrow</span>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Why Publish Section -->
   <section class="features-section">
     <div class="container">
@@ -953,6 +953,45 @@
             </div>
           </div>
         </div>
+    </div>
+  </section>
+
+    <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="floating-shape shape-1"></div>
+    <div class="floating-shape shape-2"></div>
+    
+    <div class="container">
+      <div class="about-content" data-aos="fade-up" data-aos-duration="1500">
+        <h2 class="about-title">About Curevita Journals</h2>
+        
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="about-text" data-aos="fade-right" data-aos-delay="200">
+              <span class="highlight">Curevita Research Journals</span> is a global platform dedicated to advancing scientific
+              discovery, innovation, and interdisciplinary knowledge. Guided by a vision to
+              connect research with real-world impact, we publish high-quality, peer-reviewed
+              international journals spanning a wide range of disciplines, including sciences,
+              commerce and management, health and medicine, agriculture and animal
+              sciences, engineering and technology, environmental studies, computer and
+              data sciences, and beyond.
+            </p>
+            
+            <p class="about-text" data-aos="fade-right" data-aos-delay="300">
+              With rigorous editorial standards and adherence to international indexing
+              norms, Curevita Research Journals serves as a bridge between researchers,
+              academicians, industry experts, and policymakers. We are committed to
+              promoting open access, ethical publishing practices, and collaborative
+              scholarship, ensuring that innovative ideas and groundbreaking research reach
+              the global community.
+            </p>
+            
+            <p class="about-text" data-aos="fade-right" data-aos-delay="400">
+              <span class="highlight">Where Knowledge Meets Innovation, and Research Shapes Tomorrow</span>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
