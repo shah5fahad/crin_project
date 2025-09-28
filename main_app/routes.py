@@ -45,6 +45,11 @@ def current_issue():
     return render_template('Current_issue.html')
 
 
+@app.route('/archive_issue')
+def archive_issue():
+    return render_template('archive_issue.html')
+
+
 @app.route('/leaf_beetle_research')
 def leaf_beetle_research():
     return render_template('Leaf_beetle_research.html')
